@@ -7,7 +7,8 @@
     "build": "cross-env webpack --config ./webpack.config.js --mode production --fix",
     "dev": "cross-env webpack-dev-server --config ./webpack.config.js --open --mode development --fix",
     "test": "cross-env jest --coverage",
-    "test:watch": "cross-env jest --watchAll"
+    "test:watch": "cross-env jest --watchAll",
+    "lint": "cross-env eslint --fix src"
   },
   "author": "Dipmalya Sen",
   "license": "ISC",

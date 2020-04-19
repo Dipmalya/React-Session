@@ -10,21 +10,21 @@ class Routes extends Component {
         return (
             <Route
                 exact
+                key={component}
+                page={component}
                 path={path}
                 render={props => <RouteComponent {...props} />}
-                page={component}
-                key={component}
             />
         )
     }
 
     render() { 
       return ( 
-         <Router> 
+          <Router> 
               <Switch>
-                {Object.values(routes).map(routeData => this.route(routeData))}
+                  {Object.values(routes).map(routeData => this.route(routeData))}
               </Switch> 
-         </Router> 
+          </Router> 
      ); 
     } 
   } 

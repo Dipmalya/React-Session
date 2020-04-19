@@ -16,11 +16,11 @@ module.exports = {
                 "exclude": /node_modules/,
                 "use": ["babel-loader"]
             },
-            // {
-            //     "test": /\.(js|jsx)$/,
-            //     "exclude": /node_modules/,
-            //     "use": ["eslint-loader"]
-            // },
+            {
+                "test": /\.(js|jsx)$/,
+                "exclude": /node_modules/,
+                "use": ["eslint-loader"]
+            },
             {
                 "test": /\.scss$/,
                 "loader": 'style-loader!css-loader!sass-loader'
