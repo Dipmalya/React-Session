@@ -3,7 +3,10 @@ module.exports = {
     "devServer": {
         "port": 5002,
         "contentBase": "./dist",
-        "hot": true
+        "hot": true,
+        "historyApiFallback": {
+            "disableDotRule": true,
+        },
     },
     "entry": "./src/index.jsx",
     "module": {

@@ -1,9 +1,12 @@
 const webpack = require("webpack");
 module.exports = {
     "devServer": {
-        "port": 5002,
+        "port": 5000,
         "contentBase": "./dist",
-        "hot": true
+        "hot": true,
+        "historyApiFallback": {
+            "disableDotRule": true,
+        },
     },
     "entry": "./src/index.jsx",
     "module": {

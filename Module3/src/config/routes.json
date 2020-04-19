@@ -1,6 +1,10 @@
 {
     "todo": {
         "component": "Todo",
+        "path": "/"
+    },
+    "todoList": {
+        "component": "Todo",
         "path": "/todo"
     }
 }
