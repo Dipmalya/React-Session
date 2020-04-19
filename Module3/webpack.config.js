@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 module.exports = {
     "devServer": {
-        "port": 5001,
+        "port": 5002,
         "contentBase": "./dist",
         "hot": true
     },
